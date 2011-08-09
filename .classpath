@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="lib/hsqldb.jar"/>
+	<classpathentry kind="lib" path="lib/looks-2.3.1.jar"/>
+	<classpathentry kind="lib" path="lib/iText-5.0.1.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/Kaffeekasse/lib/itextpdf-api.zip!/itextpdf-api/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/jcommon-1.0.16.jar"/>
+	<classpathentry kind="lib" path="lib/jfreechart-1.0.13.jar" sourcepath="lib/jfreechart-1.0.13.zip"/>
+	<classpathentry kind="lib" path="lib/toplink-essentials-agent.jar"/>
+	<classpathentry kind="lib" path="lib/toplink-essentials.jar" sourcepath="lib/toplink-essentials-2.0.1-09d-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

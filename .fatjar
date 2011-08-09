@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Fri Feb 19 12:18:06 CET 2010
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=deploy/Kaffeekasse_fat.jar
+manifest.mergeall=true
+manifest.mainclass=net.msites.kaffeekasse.KaffeekasseApplication
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=
