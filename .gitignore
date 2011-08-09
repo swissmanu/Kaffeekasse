@@ -2,3 +2,4 @@ bin/
 backups/
 deploy/
 db/
+.settings/
