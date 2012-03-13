@@ -2,7 +2,7 @@ package net.msites.kaffeekasse;
 
 import net.msites.guilibrary.toolbox.GUIHelper;
 import net.msites.guilibrary.toolbox.GUIImageManager;
-import net.msites.kaffeekasse.ui.KaffeekasseFrame;
+import net.msites.kaffeekasse.ui.mainframe.KaffeekasseFrame;
 
 public class KaffeekasseApplication {
 
