@@ -69,7 +69,7 @@ public class BillingPDFFactory extends AbstractPdfFactory {
         cell.setBorderWidthTop(0f);
         table.addCell(cell);
         
-        // Produkte hinzufügen:
+        // Produkte hinzufï¿½gen:
         for(Product product: products) {
         	table.addCell(createVerticalTitleCell(product.getName()));
         }
@@ -78,7 +78,7 @@ public class BillingPDFFactory extends AbstractPdfFactory {
         table.addCell(createVerticalTitleCell("Total"));
         table.addCell(createVerticalTitleCell("Bezahlt"));
         
-        // Konsumenten und zugehörige BillingPosition:
+        // Konsumenten und zugehï¿½rige BillingPosition:
         double billingTotal = 0d;
         int rowIndex = 0;
         for(Consumer consumer: consumers) {
@@ -158,8 +158,8 @@ public class BillingPDFFactory extends AbstractPdfFactory {
         // Disclaimer:
         document.add(new Paragraph(
         		20f,
-        		"Diese Abrechnung enthält nur die Konsumenten und Produkte, " +
-        		"welche während der entsprechenden Periode aktiv waren resp. " +
+        		"Diese Abrechnung enthï¿½lt nur die Konsumenten und Produkte, " +
+        		"welche wï¿½hrend der entsprechenden Periode aktiv waren resp. " +
         		"bezogen wurden.",
         		FONT_VERDANA_8));
         
@@ -227,76 +227,5 @@ public class BillingPDFFactory extends AbstractPdfFactory {
     	
     	return cell;
 	}
-	
-//	/**
-//	 * @param args
-//	 */
-//	public static void main(String[] args) throws Exception {
-//		ArrayList<Consumer> consumers = new ArrayList<Consumer>();
-//		ArrayList<Product> products = new ArrayList<Product>();
-//		
-//		consumers.add(new Consumer("Carmen", "Ackermann", "carmen.ackermann-goeldi@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Manuel", "Alabor", "manuel.alabor@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Renato", "Altenburger", "renato.altenburger@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Ravi", "Anthamola", "ravikumar.anthamola@credit-suisse.com", Language.ENGLISH, true));
-//		consumers.add(new Consumer("Gerry", "Arnold", "gerhard.arnold@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Roger", "Begert", "roger.w.begert@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Patrick", "Belk", "patrick.belk@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Josip", "Budzaki", "josip.budzaki@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Mario", "Clavadetscher", "mario.clavadetscher@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Mario", "Eugster", "mario.eugster@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Hermann", "Gloor", "hermann.gloor@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Christoph", "Glutz", "christoph.glutz@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Satish", "Kessettiv", "satish.k.kessettiv@credit-suisse.com", Language.ENGLISH, true));
-//		consumers.add(new Consumer("Corsin", "Marques", "corsin.marques@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Jeremias", "Messmer", "jeremias.messmer@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Sandro", "Muggli", "sandro.muggli@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Pius", "Pally", "pius.pally@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Daniel", "Rensch", "daniel.rensch@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Marcel", "Schnoz", "marcel.schnoz@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Lars", "Schröder", "lars.schroeder@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Stefan", "Ort", "stefan.ort@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Roger", "Steinmann", "roger.steinmann@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Lorenz", "Tanner", "lorenz.tanner@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Cindy", "Weber", "cindy.weber@credit-suisse.com", Language.GERMAN, true));
-//		consumers.add(new Consumer("Madhu", "Yalamuri", "madhusudhan.yalamuri@credit-suisse.com", Language.ENGLISH, true));
-//
-//		products.add(new Product("Tee / Milch", 0.5d));
-//		products.add(new Product("Kaffee", 0.8d));
-//		products.add(new Product("Glacé", 1d));
-//		products.add(new Product("Schokolade (klein)", 0.4d));
-//		products.add(new Product("Schokolade (gross)", 0.9d));
-//		products.add(new Product("Getränk", 1.2d));
-//		products.add(new Product("RedBull", 1.7d));
-//		products.add(new Product("Parkplatz", 5d));
-//		
-//		Billing billing = new Billing("Abrechnung Dezember 2009", new Date());
-//		
-//		billing.addBillingPosition(new BillingPosition(
-//				consumers.get(0),
-//				new Consumption[] {
-//					new Consumption(products.get(0), 1d),
-//					new Consumption(products.get(1), 2d),
-//					new Consumption(products.get(2), 3d),
-//					new Consumption(products.get(3), 4d),
-//					new Consumption(products.get(4), 5d),
-//					new Consumption(products.get(5), 6d),
-//					new Consumption(products.get(6), 7d)
-//				},
-//				true
-//				));
-//		billing.addBillingPosition(new BillingPosition(
-//				consumers.get(1),
-//				new Consumption[] {
-//					new Consumption(products.get(7), 1d),
-//					new Consumption(products.get(2), 10d)
-//				},
-//				false
-//				));
-//		billing.getBillingPosition(consumers.get(1)).addOtherCost(new OtherCost("Andere",12.5d));
-//		
-//		
-//		BillingPDFFactory.createSheet(billing);
-//	}
 
 }
